@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.14" icons="true" always-add-relationships="true" generalizations="true" realizations="true" 
+  associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="com.bookstore.dev.Book" project="Week 2 - Reviewed Lab Take 2" 
+    file="/Week 2 - Reviewed Lab Take 2/src/com/bookstore/dev/Book.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="340" width="217" x="653" y="-74"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="com.bookstore.dev.Magazine" project="Week 2 - Reviewed Lab Take 2" 
+    file="/Week 2 - Reviewed Lab Take 2/src/com/bookstore/dev/Magazine.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="448" width="314" x="299" y="-74"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="3" language="java" name="com.bookstore.dev.PublisherInfo" project="Week 2 - Reviewed Lab Take 2" 
+    file="/Week 2 - Reviewed Lab Take 2/src/com/bookstore/dev/PublisherInfo.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="199" x="299" y="414"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="4" language="java" name="com.bookstore.dev.ElectronicBook" project="Week 2 - Reviewed Lab Take 2" 
+    file="/Week 2 - Reviewed Lab Take 2/src/com/bookstore/dev/ElectronicBook.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="412" width="308" x="931" y="-74"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="5" language="java" name="com.bookstore.dev.ElectronicInfo" project="Week 2 - Reviewed Lab Take 2" 
+    file="/Week 2 - Reviewed Lab Take 2/src/com/bookstore/dev/ElectronicInfo.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="144" x="961" y="414"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="6" language="java" name="com.bookstore.dev.BookInfo" project="Week 2 - Reviewed Lab Take 2" 
+    file="/Week 2 - Reviewed Lab Take 2/src/com/bookstore/dev/BookInfo.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="160" width="195" x="726" y="414"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="7" language="java" name="com.bookstore.dev.InventoryMaster" project="Week 2 - Reviewed Lab Take 2" 
+    file="/Week 2 - Reviewed Lab Take 2/src/com/bookstore/dev/InventoryMaster.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="196" width="361" x="878" y="-310"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <dependency id="8">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <association id="9">    
+    <bendpoint x="900" y="-74"/>    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="10" name="books"/>      
+      <multiplicity id="11" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="12">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="5"/>  
+  </realization>  
+  <realization id="13">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="6"/>  
+  </realization>  
+  <realization id="14">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <dependency id="15">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <realization id="16">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="6"/>  
+  </realization>  
+  <dependency id="17">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <realization id="18">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </realization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
